@@ -1,5 +1,5 @@
-A WordPress Plug-in for custom image size quality
-=================================================
+WP plug-in for custom image size quality
+========================================
 
 Adds the ability to programmatically specify the JPG quality of individual custom image sizes in WordPress.
 
@@ -16,6 +16,11 @@ This plug-in lets you do this:
 
 	set_image_size_quality( 'custom-size', 40 );
 
+Installation
+------------
+
+Just copy the whole "custom-image-size-quality" folder into your "wp-content/plugins" folder. Then activate the plug-in in wp-admin as usual.
+
 Credits
 -------
 
@@ -23,7 +28,7 @@ I found the hook approach at this informative URL:
 
 http://wordpress.stackexchange.com/questions/74103/set-jpeg-compression-for-specific-custom-image-sizes
 
-I then formed a plugin out of it, and modified the scaling to use WP's own Image Editor functionality, which will then use GD or ImageMagick (or other custom editor) based on availability and preferences.
+I then prettied it up and formed a plugin out of it. Modified the scaling to use WP's own Image Editor functionality, which will then use GD or ImageMagick (or other custom editor) based on availability and preferences.
 
 Comments and suggestions
 ------------------------

@@ -30,6 +30,12 @@ http://wordpress.stackexchange.com/questions/74103/set-jpeg-compression-for-spec
 
 I then prettied it up and formed a plugin out of it. Modified the scaling to use WP's own Image Editor functionality, which will then use GD or ImageMagick (or other custom editor) based on availability and preferences.
 
+Version 1.1
+-----------
+
+- Fixed a critical bug that caused multiple sizes to crop based on the previous size dimensions.
+- Changed hook approach to use a filter hook ("update_post_metadata"), which will trigger not only on uploads, but also on updates, making this plugin more compatible with plugins like "Regenerate Thumbnails".
+
 Comments and suggestions
 ------------------------
 
